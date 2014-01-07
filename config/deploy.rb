@@ -9,7 +9,8 @@ set :use_sudo, true
 server "myservice1248.cloudapp.net", :web, :app, :db, primary: true 
 set :deploy_to, "/home/#{user}/apps/#{application}" 
 default_run_options[:pty] = true 
-ssh_options[:forward_agent] = true ssh_options[:port] = 22
+ssh_options[:forward_agent] = true 
+ssh_options[:port] = 22
  namespace :deploy do 
 	desc "Fix permissions" 
 	task :fix_permissions, :roles => [ :app, :db, :web ] do 
