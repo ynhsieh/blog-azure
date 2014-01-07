@@ -3,7 +3,7 @@ set :bundle_flags, "--no-deployment --quiet"
 set :application, "blog_app" 
 set :user, "NewUser1" 
 set :scm, :git 
-set :repository, "git@github.com:ynhsieh/blog_app.git" 
+set :repository, "git@github.com:ynhsieh/blog_azure.git" 
 set :branch, "master" 
 set :use_sudo, true 
 server "myservice1248.cloudapp.net", :web, :app, :db, primary: true 
