@@ -7,7 +7,7 @@ TIMEOUT=${TIMEOUT-60}
 APP_ROOT=/home/NewUser1/apps/blog_app/current
 PID=$APP_ROOT/tmp/pids/unicorn.pid
 CMD="cd $APP_ROOT; bundle exec unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
-AS_USER=blogger
+AS_USER=NewUser1
 set -u
  
 OLD_PIN="$PID.oldbin"
